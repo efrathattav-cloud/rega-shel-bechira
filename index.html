@@ -3,23 +3,118 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>רגע של בחירה</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f3ef;
+            color: #2f2f2f;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            width: 85%;
+            max-width: 650px;
+            padding: 60px 40px;
+            border-radius: 28px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .small-title {
+            font-size: 18px;
+            color: #a47d6d;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+
+        h2 {
+            font-size: 27px;
+            font-weight: normal;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        button {
+            margin-top: 25px;
+            background: #a47d6d;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #8d6758;
+        }
+
+        .signature {
+            margin-top: 35px;
+            font-size: 16px;
+            color: #999;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <h1>רגע של בחירה 🌷</h1>
+    <div class="card">
 
-    <h2>מה הבחירה הקטנה שאני יכולה לעשות היום בשביל עצמי?</h2>
+        <div class="small-title">
+            🌿 רגע אחד לעצמך
+        </div>
 
-    <p>
-        לא צריך לשנות את כל החיים היום.
-        לפעמים תנועה מתחילה מבחירה אחת קטנה.
-    </p>
+        <h1>
+            רגע של בחירה
+        </h1>
 
-    <p>
-        אפרת יערה
-    </p>
+        <h2>
+            מה הבחירה הקטנה שאת יכולה לעשות היום בשביל עצמך?
+        </h2>
+
+        <p>
+            את לא חייבת לשנות עכשיו את כל החיים.
+            <br>
+            לפעמים תנועה גדולה מתחילה מבחירה אחת קטנה.
+        </p>
+
+        <button onclick="showMessage()">
+            הבחירה שלי להיום
+        </button>
+
+        <div class="signature">
+            אפרת יערה
+        </div>
+
+    </div>
+
+
+    <script>
+        function showMessage() {
+            alert("עכשיו תבחרי דבר אחד קטן שאת עושה היום — לא מחר ❤️");
+        }
+    </script>
 
 </body>
 
